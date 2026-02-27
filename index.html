@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+
+<title>Encuentro Privado</title>
+
+<!-- ⭐ Miniatura Facebook -->
+<meta property="og:title" content="Encuentro Privado">
+<meta property="og:description" content="Acceso en vivo disponible ahora">
+<meta property="og:image" content="https://i.postimg.cc/dVW27Zxf/ab51c367684742a4ed328ea6f72adf87.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:type" content="website">
+
+<style>
+
+body{
+margin:0;
+background:black;
+color:white;
+font-family:system-ui;
+overflow:hidden;
+text-align:center;
+}
+
+/* Fondo */
+.bg{
+position:fixed;
+inset:0;
+background:url("hero.webp") center/cover;
+filter:brightness(.55);
+}
+
+/* Contenedor */
+.container{
+position:relative;
+z-index:5;
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:20px;
+}
+
+/* LIVE badge */
+.live{
+position:absolute;
+top:18px;
+left:18px;
+background:rgba(0,0,0,.6);
+padding:7px 16px;
+border-radius:30px;
+display:flex;
+align-items:center;
+gap:8px;
+font-size:.8rem;
+}
+
+.dot{
+width:10px;
+height:10px;
+background:red;
+border-radius:50%;
+animation:blink 1.2s infinite;
+}
+
+@keyframes blink{
+0%{opacity:1}
+50%{opacity:.3}
+100%{opacity:1}
+}
+
+/* Texto */
+h1{
+font-size:1.6rem;
+max-width:420px;
+margin-bottom:18px;
+}
+
+/* Social proof */
+.social{
+font-size:.9rem;
+opacity:.85;
+margin-bottom:15px;
+}
+
+/* Countdown */
+.timer{
+color:#ff4d88;
+font-weight:bold;
+margin-bottom:28px;
+}
+
+/* Botón */
+.btn{
+background:linear-gradient(45deg,#ff0055,#ff4d88);
+padding:18px 50px;
+border-radius:60px;
+color:white;
+text-decoration:none;
+font-weight:700;
+letter-spacing:1px;
+display:inline-block;
+transition:.25s;
+animation:pulse 2s infinite;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+@keyframes pulse{
+0%{transform:scale(1)}
+50%{transform:scale(1.06)}
+100%{transform:scale(1)}
+}
+
+/* Mobile */
+@media(max-width:480px){
+h1{font-size:1.35rem}
+.btn{padding:16px 38px}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="bg"></div>
+
+<div class="container">
+
+<div class="live">
+<div class="dot"></div>
+En vivo
+</div>
+
+<h1>Ella está conectada y busca un encuentro privado ahora mismo...</h1>
+
+<div class="social">🔥 238 personas están en línea</div>
+
+<div class="timer">
+⏳ Acceso termina en <span id="timer">00:30</span>
+</div>
+
+<a class="btn" href="https://www.danielalover.xyz/s/63e1ad615201c?sub2=banner_pin&track=001&subsource=fb&ext_click_id=fb_campaigns">
+Ver quién está en línea
+</a>
+
+</div>
+
+<script>
+
+/* Countdown */
+let time=30;
+let timer=document.getElementById("timer");
+
+setInterval(()=>{
+
+timer.innerHTML="00:"+(time<10?"0":"")+time;
+
+if(time<=0){
+window.location.href="https://www.danielalover.xyz/s/63e1ad615201c?sub2=banner_pin&track=001&subsource=fb&ext_click_id=fb_campaigns";
+}
+
+time--;
+
+},1000);
+
+</script>
+
+<!-- Contador paisa oculto -->
+<div style="display:none">
+<script>
+var _wau=_wau||[];
+_wau.push(["dynamic","paisa","gfm","c4302bffffff","small"]);
+</script>
+<script async src="https://waust.at/d.js"></script>
+</div>
+
+</body>
+</html>
